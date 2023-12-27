@@ -10,6 +10,7 @@ fun main(args: Array<String>) {
 fun Application.module() {
     configureSecurity()
     configureSerialization()
-    configureDatabases()
-    configureRouting()
+
+    val dbConnection = connectToPostgres(true)
+    configureRouting(dbConnection)
 }

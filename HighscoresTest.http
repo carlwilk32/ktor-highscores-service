@@ -1,0 +1,42 @@
+POST http://127.0.0.1:8080/highscores
+Content-Type: application/json
+
+{
+  "name": "Player1",
+  "score": 123
+}
+
+###
+POST http://127.0.0.1:8080/highscores
+Content-Type: application/json
+
+{
+  "name": "Player2",
+  "score": 55
+}
+
+###
+POST http://127.0.0.1:8080/highscores
+Content-Type: application/json
+
+{
+  "name": "Player3",
+  "score": 999
+}
+
+###
+POST http://127.0.0.1:8080/highscores
+Content-Type: application/json
+
+{
+  "name": "Player4",
+  "score": 11
+}
+
+###
+GET http://127.0.0.1:8080/highscores
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/highscores?top=3
+Accept: application/json
